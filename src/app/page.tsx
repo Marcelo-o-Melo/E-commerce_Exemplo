@@ -42,7 +42,7 @@ export default function HomePage() {
               <h1 className="text-black">R$ {produto.preco}</h1>
 
               <button
-                className="border rounded-lg text-black "
+                className="border rounded-lg text-black hover:bg-green-400"
                 onClick={() => adicionarAoCarrinho(produto)}>
                 adicionar ao carrinho
               </button>

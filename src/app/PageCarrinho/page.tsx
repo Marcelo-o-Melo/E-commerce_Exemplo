@@ -76,7 +76,7 @@ export default function PageCarrinho() {
                       setCarrinho(novoCarrinho); // atualiza o carrinho
                     }}
                   />
-                  <span onClick={() => excluirItem(index)} className='border-l pl-2 mb-2 pr-10 cursor-pointer text-red-500'>Excluir</span>
+                  <span onClick={() => excluirItem(index)} className='border-l px-2 mb-2 cursor-pointer text-red-500 text-center hover:bg-red-300 hover:border-white'>Excluir</span>
                 </div>
               </div>
               <div className="flex items-center ml-auto">
@@ -91,7 +91,7 @@ export default function PageCarrinho() {
           <h2 className="text-black mt-3">subtotal ({totalQuantidade} {totalQuantidade === 1 ? "item" : "itens"}): R$ {subtotal.toFixed(2)}</h2>
           <button
             onClick={finalizarPedido}
-            className="border rounded-lg px-2 mt-auto mb-3 text-black"
+            className="border rounded-lg px-2 mt-auto mb-3 text-black hover:bg-green-400"
           >
             Finalizar pedido
           </button>
